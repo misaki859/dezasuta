@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*利用するタグによって増やす*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+div,
+dl {
+    margin: 0;
+    padding: 0;
+    /*1行が1文字分の高さという意味*/
+    line-height: 1;
+    /*デフォルトの文字色、フォントを予め当てておく*/
+    color: #4c4c4c;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    box-sizing: border-box;
+}
+a{
+    /*下線を消す*/
+    text-decoration: none;
+    /*inherit=色を無効化するという意味*/
+    color: inherit;
+}
+ul{
+    /*箇条書きの「•」を消す*/
+    list-style: none;
+}
+img{
+    /*使用する画像の大きさに関わらず、画面全体を占める大きさ(100%)からスタートできる*/
+    width: 100%;
+    /*ブロックレベルのタグの中に画像を入れた際、下に隙間ができてしまうことを防ぐ*/
+    vertical-align: bottom;
+    /*画像を入れたときに勝手にborderがついてしまうことを防ぐ*/
+    border: none;
+}

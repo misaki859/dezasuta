@@ -1,0 +1,22 @@
+@charset "utf-8";
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    gap: 20px;
+}
+.box img{
+    width: 30%;
+}
+
+/*メディアクエリ*/
+@media screen and (max-width: 768px) {
+    ul{
+        flex-direction: column;
+    }
+}
